@@ -1,4 +1,4 @@
-package ru.vaszol;
+package ru.vaszol.sample2;
 
 import com.github.sarxos.webcam.Webcam;
 
@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Created by vas on 02.07.2017.
+ * Capture "video" from web-camera and display it in window.
  */
 public class WebcamSwingGui extends JFrame {
     private final Webcam webcam;
@@ -33,6 +33,7 @@ public class WebcamSwingGui extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
+        // start/stop capture
         button.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if(!isRunning){
@@ -67,6 +68,9 @@ public class WebcamSwingGui extends JFrame {
         });
     }
 
+    /**
+     * thread capture and show wideo
+     */
     class VideoFeedTaker extends Thread {
         @Override
         public void run() {

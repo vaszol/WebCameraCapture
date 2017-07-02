@@ -1,4 +1,4 @@
-package ru.vaszol;
+package ru.vaszol.samle1;
 
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamEvent;
@@ -11,7 +11,8 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Hello world!
+ * Make jpg file from webcam.
+ * write "log" of use webcam.
  */
 public class WebcamQuickStart {
     public static void main(String[] args) throws IOException {

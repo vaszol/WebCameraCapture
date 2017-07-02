@@ -1,4 +1,4 @@
-package ru.vaszol;
+package ru.vaszol.sample3;
 
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamPanel;
@@ -7,7 +7,7 @@ import com.github.sarxos.webcam.WebcamResolution;
 import javax.swing.*;
 
 /**
- * Created by vas on 02.07.2017.
+ * Use WebcamPanel to dosplay webcam.
  */
 public class MyWebcamPanel {
     public static void main(String[] args) {

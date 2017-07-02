@@ -20,6 +20,7 @@
             <artifactId>webcam-capture</artifactId>
             <version>0.3.10</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
